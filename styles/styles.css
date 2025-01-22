@@ -59,6 +59,7 @@ header
     list-style: none;
     font-size: 1.25rem;
     font-weight: 500;
+    transition: transform 0.5s;
 }
 .fac{
     color: #05D4DF;
@@ -79,6 +80,7 @@ header
     font-weight: 500;
     font-size: medium;
     background-color: var(--primary-color);
+    transition: background-color 0.7s, transform 0.7s;
 }
 .nav-link{
     text-decoration: none;
@@ -120,6 +122,7 @@ header
     border-radius: 0.75rem;
     font-size: medium;
     font-weight: 500;
+    transition: background-color 0.7s, color 0.7s;
 }
 
 /* Curriculum section */
@@ -152,8 +155,8 @@ header
     align-items: center;
     text-align: center;
     gap: 1.5rem;
-    box-shadow: 3px 3px 13pt #888888;
-    transition: box-shadow 0.5s;
+    box-shadow: 2px 2px 5pt #555;
+    transition: transform 0.5s;
 }
 
 
@@ -215,6 +218,36 @@ header
 }
 
 
+/* Hover Effects */
+
+.nav-item:hover
+{
+    transform: scale(1.35);
+}
+.nav-btn:hover
+{
+    background-color: var(--secondary-color);
+    transform: rotate(360deg);
+}
+
+.enroll-btn:hover
+{
+    background-color: #454545;
+    color: #FFF;
+}
+
+.curi-cls div:hover
+{
+    transform: translateY(-2.5rem) rotate(5deg);
+}
+.npre-btn button:first-child:hover
+{
+    box-shadow: -3px 0 5px #444;
+}
+.npre-btn button:last-child:hover
+{
+    box-shadow: 3px 0 5px #444;
+}
 
 
 /* Responsive section */
