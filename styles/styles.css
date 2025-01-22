@@ -1,0 +1,290 @@
+/* Font styles  */
+
+.quicksand-regular {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared styles */
+*{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+    font-family: "Quicksand";
+    font-weight:bold;
+}
+.display-flex{
+    display: flex;
+}
+
+:root{
+    --primary-color:#FEA301;
+    --secondary-color:#01ACFD;
+}
+
+.text-primary
+{
+    color: var(--primary-color);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+/* Nav-bar related styles */
+header
+{
+    padding: 1.2rem 8.5rem;
+    
+}
+
+.nav-bar{
+    justify-content:space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+.nav-left{
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.fac{
+    color: #05D4DF;
+}
+.adm{
+    color:#5D58EF;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-btn{
+    color: #F0F8FF;
+    border: none;
+    padding: 0.75rem 3rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: medium;
+    background-color: var(--primary-color);
+}
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-title{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.nav-menu{
+    display: none;
+}
+
+/* Banner related styles */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ban-details{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.ban-heading{
+    font-size: 3rem;
+}
+
+.ban-para{
+    font-size: 1.1rem;
+}
+.enroll-btn{
+    background-color: #222;
+    color: #DDD;
+    width: fit-content;
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* Curriculum section */
+.curriculum
+{
+    background-image: url(../assets/bg.png);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 4rem 6rem;
+}
+.curriculum h2{
+    text-align: center;
+}
+.curi-cls
+{
+    display: flex;
+    gap: 1.5rem;
+}
+.curi-cls div
+{
+    width: calc(100% - 2rem);
+    border: 1px solid lightgray;
+    border-radius: 1.4rem;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    box-shadow: 3px 3px 13pt #888888;
+    transition: box-shadow 0.5s;
+}
+
+
+.curi-cls div:nth-child(1)
+{
+    background: linear-gradient(to top, #FFF, #DEF5FF);
+}
+.curi-cls div:nth-child(2)
+{
+    background: linear-gradient(to top, #FFF, #FFF4DC);
+}
+.curi-cls div:nth-child(3)
+{
+    background: linear-gradient(to top, #FFF, #F2E8FF);
+}
+
+.curi-cls div:nth-child(1) button
+{
+    color: #01ACFD;
+    background-color: #FAFDFF;
+}
+.curi-cls div:nth-child(2) button
+{
+    color: #FE8301;
+    background-color: #FFFDF9;
+}
+.curi-cls div:nth-child(3) button
+{
+    color: #8700FF;
+    background-color: #FDFBFF;
+}
+
+.curi-cls div img
+{
+    width: 125px;
+}
+
+.curi-cls div button
+{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.npre-btn
+{
+    display: flex;
+    gap: 1.5rem;
+    margin: auto;
+}
+.npre-btn button
+{
+    background-color: #FEA301;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: box-shadow 0.5s;
+}
+
+
+
+
+/* Responsive section */
+@media screen and (max-width: 576px) {
+    header
+    {
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+    }
+    body header nav ul li, nav > a,body header nav div h3, .ban-heading h3
+    {
+        display: none;
+    }
+    header nav .ban-heading img
+    {
+        width: 3rem;
+    }
+    header nav .nav-menu
+    {
+        display: inline-block;
+        justify-content: space-around;
+    }  
+    
+    header nav{
+        border-bottom: 1pt solid var(--primary-color);
+        padding-bottom: .5rem;
+    }
+    /* header div{
+        padding: 1rem 1rem;
+    } */
+    .banner
+    {
+        flex-direction: column-reverse;
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+    .ban-details
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ban-details h1
+    {
+        font-size: xx-large;
+    }
+    .ban-details button
+    {
+        font-size: larger;
+        padding: 0.75rem 2rem;
+    }
+    .banner img
+    {
+        width: 100%;
+    }
+
+    /* Curriculum part */
+    .curriculum
+    {
+        margin: 3rem 1rem;
+    }
+    .curi-cls
+    {
+        flex-direction: column;
+    }
+    .npre-btn
+    {
+        display: none;
+    }
+}
