@@ -248,6 +248,42 @@ header
 {
     box-shadow: 3px 0 5px #444;
 }
+/* Stories section styles */
+
+
+/* Footer styles */
+
+footer{
+    display: flex;
+    justify-content:space-around;
+    gap: 1.2rem;
+    background-color: var(--secondary-color);
+    padding: 8rem 12rem 10rem 6rem; 
+    color: #FFF;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.foot-logo{
+    display: flex;
+    gap:.5rem;
+
+}
+
+.foot-logo h2{
+    font-size: 2rem;
+}
+.footer-links div{
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+}
+.kids-education{
+    max-width: 30%;
+}
+
 
 
 /* Responsive section */
@@ -319,5 +355,20 @@ header
     .npre-btn
     {
         display: none;
+    }
+
+    /* Stories section styles */
+    
+
+
+
+    /* Footer styles */
+    footer{
+        padding: 3rem 1rem;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .kids-education{
+        max-width: 100%;
     }
 }
