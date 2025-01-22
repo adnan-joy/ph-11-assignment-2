@@ -40,6 +40,11 @@ button{
     color: var(--secondary-color);
 }
 
+.sec-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
 /* Nav-bar related styles */
 header
 {
@@ -77,7 +82,7 @@ header
     border: none;
     padding: 0.75rem 3rem;
     border-radius: 0.75rem;
-    font-weight: 500;
+    font-weight: 800;
     font-size: medium;
     background-color: var(--primary-color);
     transition: background-color 0.7s, transform 0.7s;
@@ -121,7 +126,7 @@ header
     border: none;
     border-radius: 0.75rem;
     font-size: medium;
-    font-weight: 500;
+    font-weight: 800;
     transition: background-color 0.7s, color 0.7s;
 }
 
@@ -249,7 +254,82 @@ header
     box-shadow: 3px 0 5px #444;
 }
 /* Stories section styles */
+.stories-part{
+    background: linear-gradient(to bottom, #fff,rgba(254,163,1,0.4));
+    
+}
+.stories{
+    background-image: url(/assets/bg.png);
+    background-position: center;
+    background-size: contain;
+    padding: 3.7rem 6rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+}
+.story1{ grid-area:toodler}
+.story2{ grid-area:family}
+.story3{ grid-area:kids}
+.story4{ grid-area:tutor}
+.story5{ grid-area:improvement}
 
+.story-grid{
+    display: grid;
+    grid-template-areas: 
+    'toodler family kids'
+    'toodler tutor improvement';
+    gap:1rem;
+}
+.common{
+    width: min-content;
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    /* z-index: 1; */
+
+}
+.common img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.common h3, .common p{
+    margin: 1.5rem;
+}
+.common h4{
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 1rem;
+    width: fit-content;
+    /* z-index: 2; */
+    left: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1 rem;
+    font-weight: 500;
+}
+
+.story1 h4{
+    background-color: var(--secondary-color);
+    top: 320px;
+}
+.story2 h4{
+    background-color: #95B226;
+    top: 160px;
+}
+.story3 h4{
+    background-color: #5D58F0;
+    top: 160px;
+}
+.story4 h4{
+    background-color: #95B226;
+    top: 165px;
+}
+.story5 h4{
+    background-color: #95B226;
+    top: 165px;
+}
 
 /* Footer styles */
 
@@ -342,7 +422,10 @@ footer>div{
     {
         width: 100%;
     }
-
+    .sec-title{
+        font-size: 1.65rem;
+        font-weight: 800;
+    }
     /* Curriculum part */
     .curriculum
     {
@@ -358,8 +441,55 @@ footer>div{
     }
 
     /* Stories section styles */
-    
+    .story1{
+        display: none;
+    }
 
+    .stories-part{
+        /* margin: 0 2rem; */
+        padding: 0 1rem;
+    }
+    .common img{
+        width: 185px;
+    }
+
+    .story-grid{
+        display: grid;
+        grid-template-areas: 
+        'family kids'
+        'tutor improvement';
+    }
+
+    .story2 h4{
+        background-color: #95B226;
+        top: 100px;
+        left: 25px;
+    }
+    .story3 h4{
+        background-color: #5D58F0;
+        top: 100px;
+        left: 25px;
+    }
+    .story4 h4{
+        background-color: #95B226;
+        top: 100px;
+        left: 25px;
+    }
+    .story5 h4{
+        background-color: #95B226;
+        top: 100px;
+        left: 25px;
+    }
+    .common h4{
+        font-size: .8rem;
+    }
+    .common h3{
+        font-size: .8rem;
+    }
+    .stories .enroll-btn{
+        margin-bottom: 2.5rem;
+    }
+    
 
 
     /* Footer styles */
